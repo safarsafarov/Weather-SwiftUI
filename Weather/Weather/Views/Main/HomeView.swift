@@ -46,6 +46,27 @@ struct HomeView: View {
             .padding(.top, 51)
         }
     }
+    
+    private var attributedString: AttributedString {
+        var string = AttributedString("19°" + "\n" + "Mostly Clear")
+        
+        if let temp = string.range(of: "19°"){
+            string[temp].font = .system(size: 96, weight: .thin)
+            string[temp].foregroundColor = .primary
+        }
+        
+        if let pipe = string.range(of: "|") {
+            string[pipe].font = .title3.weight(.semibold)
+            string[weather].foregroundColor = .secondary
+        }
+        
+        if let weather = string.range(of: "Mostly Clear") {
+            string[weather].font = .title3.weight(.semibold)
+            string[weather].foregroundColor = .secondary
+        }
+        
+        return string
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
