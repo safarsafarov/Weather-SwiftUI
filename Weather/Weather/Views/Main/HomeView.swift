@@ -14,6 +14,7 @@ enum BottomSheetPosition: CGFloat, CaseIterable {
 }
 
 struct HomeView: View {
+    @State var botttomSheetPosition: BottomSheetPosition = .middle
     var body: some View {
         NavigationView{
             ZStack {
@@ -60,7 +61,7 @@ struct HomeView: View {
     }
     
     private var attributedString: AttributedString {
-        var string = AttributedString("19°" + "\n " + "Mostly Clear")
+        var string  = AttributedString("19°" + "\n " + "Mostly Clear")
         
         if let temp = string.range(of: "19°"){
             string[temp].font = .system(size: 96, weight: .thin)
