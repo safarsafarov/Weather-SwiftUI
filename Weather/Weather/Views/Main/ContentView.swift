@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Weather
 //
-//  Created by Safar Safarov on 10/09/22.
+//  Created by Safar Safarov on 13/09/22.
 //
 
 import SwiftUI
