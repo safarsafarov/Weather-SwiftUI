@@ -14,11 +14,11 @@ class UIBackdropView: UIView {
 }
 
 struct Backdrop: UIViewRepresentable {
-    func makeUIView(context: Context) -> some UIView {
+    func makeUIView(context: Context) -> UIBackdropView {
         UIBackdropView()
     }
     
-    func updateUIView(_ uiView: UIViewType, context: Context) {}
+    func updateUIView(_ uiView: UIBackdropView, context: Context) {}
 }
 
 struct Blur: View {
