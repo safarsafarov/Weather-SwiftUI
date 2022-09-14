@@ -16,6 +16,8 @@
 		8B8AFBD228D09BB5002ADD67 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AFBD128D09BB5002ADD67 /* Shapes.swift */; };
 		8B8AFBD428D09E8C002ADD67 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AFBD328D09E8C002ADD67 /* Extensions.swift */; };
 		8B8AFBD728D09F24002ADD67 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 8B8AFBD628D09F24002ADD67 /* BottomSheet */; };
+		8BC00D1A28D0FA820075B706 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00D1928D0FA820075B706 /* ForecastView.swift */; };
+		8BC00D1C28D0FDDB0075B706 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC00D1B28D0FDDB0075B706 /* Blur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8B8AFBCF28D09AB1002ADD67 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		8B8AFBD128D09BB5002ADD67 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		8B8AFBD328D09E8C002ADD67 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8BC00D1928D0FA820075B706 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		8BC00D1B28D0FDDB0075B706 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		8B8AFBC528D099CA002ADD67 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8BC00D1B28D0FDDB0075B706 /* Blur.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		8B8AFBC628D099D2002ADD67 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				8BC00D1928D0FA820075B706 /* ForecastView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -215,8 +221,10 @@
 			files = (
 				8B8AFBB928D09117002ADD67 /* ContentView.swift in Sources */,
 				8B8AFBD428D09E8C002ADD67 /* Extensions.swift in Sources */,
+				8BC00D1C28D0FDDB0075B706 /* Blur.swift in Sources */,
 				8B8AFBCE28D09A52002ADD67 /* HomeView.swift in Sources */,
 				8B8AFBB728D09117002ADD67 /* WeatherApp.swift in Sources */,
+				8BC00D1A28D0FA820075B706 /* ForecastView.swift in Sources */,
 				8B8AFBD028D09AB1002ADD67 /* TabBar.swift in Sources */,
 				8B8AFBD228D09BB5002ADD67 /* Shapes.swift in Sources */,
 			);

@@ -14,9 +14,17 @@ enum BottomSheetPosition: CGFloat, CaseIterable {
 }
 
 struct HomeView: View {
-    @State var botttomSheetPosition: BottomSheetPosition = .middle
+    @State var bottomSheetPosition: BottomSheetPosition = .middle
+    @State var bottomSheetTranslation: CGFloat = BottomSheetPosition.middle.rawValue
+    
+    var bottomSheetTranslationProrated: CGFloat {
+        (bottomSheetTranslation - BottomSheetPosition.middle.rawValue) / (BottomSheetPosition.top.rawValue - BottomSheetPosition.middle.rawValue)
+    }
+    
     var body: some View {
         NavigationView{
+            GeometryReader { geometry in
+                let screenHeight = geometry.size.height + geometry.safeAreaInsets.top + geometry.safeAreaInsets.bottom
             ZStack {
                 // MARK: Back
                 Color.background
@@ -53,11 +61,24 @@ struct HomeView: View {
                 }
                 .padding(.top, 51)
                 
+                // MARK: Bottom Sheet
+                BottomSheetView(position: $bottomSheetPosition) {
+                    Text(bottomSheetTranslationProrated.formatted())
+                } content: {
+                    ForecastView()
+                }
+                .onBottomSheetDrag { translation in
+                    bottomSheetTranslation = translation / screenHeight
+                }
+                
                 // MARK: Tab Bar
-                TabBar(action: {})
+                TabBar(action: {
+                    bottomSheetPosition = .top
+                })
             }
             .navigationBarHidden(true)
         }
+      }
     }
     
     private var attributedString: AttributedString {
