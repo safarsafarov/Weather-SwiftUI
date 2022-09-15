@@ -10,7 +10,16 @@ import SwiftUI
 struct ForecastCard: View {
     var forecast: Forecast
     var forecastPeriod: ForecastPeriod
-    var isActive: Bool = true
+    
+    var isActive: Bool {
+        if forecastPeriod == ForecastPeriod.hourly {
+            let isThisHour = Calendar.current.isDate(.now, equalTo: forecast.date, toGranularity: .hour)
+            return isThisHour
+        } else {
+            let isToday = Calendar.current.isDate(.now, equalTo: forecast.date, toGranularity: .day)
+            return isToday
+        }
+    }
     var body: some View {
         ZStack {
             // MARK: Card
@@ -34,9 +43,17 @@ struct ForecastCard: View {
                 
                 VStack(spacing: -4) {
                     // MARK: Forecast Small Icon
-                    Image(forecast.icon)
+                    Image("\(forecast.icon) small")
+                    
+                    // MKAR: Forecast Probability
+                    Text(forecast.probability, format: .percent)
+                        .font(.footnote.weight(.semibold))
+                        .foregroundColor(Color.probabilityText)
+                        .opacity(forecast.probability > 0 ? 1 : 0)
                 }
                 .frame(height: 42)
+                Text("\(forecast.temperature)° ")
+                    .font(.title3)
             }
             .padding(.horizontal, 8)
             .padding(.vertical, 16)

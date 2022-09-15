@@ -15,7 +15,12 @@ struct ForecastView: View {
             VStack(spacing: 20) {
                 // MARK: Segmented Control\
                 SegmentedControl(selection: $selection)
+                VStack {
+                    
+                }
+                
             }
+            
         }
         .backgroundBlur(radius: 25, opaque: true)
         .background(Color.bottomSheetBackground)
