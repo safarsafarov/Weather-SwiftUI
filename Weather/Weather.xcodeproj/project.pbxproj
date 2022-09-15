@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B17A13528D31B530055B4EE /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B17A13428D31B530055B4EE /* SegmentedControl.swift */; };
 		8B8AFBB728D09117002ADD67 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AFBB628D09117002ADD67 /* WeatherApp.swift */; };
 		8B8AFBB928D09117002ADD67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AFBB828D09117002ADD67 /* ContentView.swift */; };
 		8B8AFBBB28D09118002ADD67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8AFBBA28D09118002ADD67 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B17A13428D31B530055B4EE /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		8B8AFBB328D09117002ADD67 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8AFBB628D09117002ADD67 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		8B8AFBB828D09117002ADD67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				8BC00D1B28D0FDDB0075B706 /* Blur.swift */,
+				8B17A13428D31B530055B4EE /* SegmentedControl.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8AFBB928D09117002ADD67 /* ContentView.swift in Sources */,
+				8B17A13528D31B530055B4EE /* SegmentedControl.swift in Sources */,
 				8B8AFBD428D09E8C002ADD67 /* Extensions.swift in Sources */,
 				8BC00D1C28D0FDDB0075B706 /* Blur.swift in Sources */,
 				8B8AFBCE28D09A52002ADD67 /* HomeView.swift in Sources */,
