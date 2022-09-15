@@ -15,14 +15,19 @@ struct SegmentedControl: View {
             // MARK: Segmented Button
             HStack {
                 Button {
-                    selection = 0
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        selection = 0
+                    }
+                    
                 } label: {
                     Text("Hourly Forecast")
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
                 
                 Button {
-                    selection = 1
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        selection = 1
+                    }
                 } label: {
                     Text("Weekly Forecast")
                 }
