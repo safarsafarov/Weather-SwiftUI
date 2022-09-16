@@ -47,7 +47,7 @@ struct HomeView: View {
                     
                     // MARK: Current Weather
                     VStack(spacing: -10 * (1 - bottomSheetTranslationProrated)) {
-                        Text("Montreal")
+                        Text("Tashkent")
                             .font(.largeTitle)
                         
                         VStack {

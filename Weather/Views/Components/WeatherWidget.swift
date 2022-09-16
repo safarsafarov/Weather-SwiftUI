@@ -64,3 +64,4 @@ struct WeatherWidget_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+
